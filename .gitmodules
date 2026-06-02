@@ -1,0 +1,33 @@
+[submodule "andrej-karpathy-skills"]
+	path = andrej-karpathy-skills
+	url = https://github.com/multica-ai/andrej-karpathy-skills.git
+[submodule "caveman"]
+	path = caveman
+	url = https://github.com/JuliusBrussee/caveman.git
+[submodule "claude-code-gs"]
+	path = claude-code-gs
+	url = https://github.com/wenlong66/claude-code-gs.git
+[submodule "claude-code-novel"]
+	path = claude-code-novel
+	url = https://github.com/wenlong66/claude-code-novel.git
+[submodule "claude-mem"]
+	path = claude-mem
+	url = https://github.com/thedotmack/claude-mem.git
+[submodule "godot-mcp-pro"]
+	path = godot-mcp-pro
+	url = https://github.com/youichi-uda/godot-mcp-pro.git
+[submodule "gstack"]
+	path = gstack
+	url = https://github.com/wenlong66/gstack.git
+[submodule "hyperframes"]
+	path = hyperframes
+	url = https://github.com/heygen-com/hyperframes.git
+[submodule "superpowers"]
+	path = superpowers
+	url = https://github.com/obra/superpowers.git
+[submodule "ui-ux-pro-max-skill"]
+	path = ui-ux-pro-max-skill
+	url = https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+[submodule "unity-mcp"]
+	path = unity-mcp
+	url = https://github.com/CoplayDev/unity-mcp.git
