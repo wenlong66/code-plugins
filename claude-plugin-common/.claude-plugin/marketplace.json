@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-plugin-common",
+  "description": "Common Claude Code skills, commands, and agents for everyday document, design, testing, MCP, and repository-maintenance workflows.",
+  "owner": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "plugins": [
+    {
+      "name": "claude-plugin-common",
+      "version": "1.0.0",
+      "description": "Common Claude Code skills, commands, and agents for document work, frontend design, MCP building, CLAUDE.md maintenance, web app testing, session reporting, and code simplification.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./",
+      "category": "productivity",
+      "keywords": [
+        "claude-code",
+        "skills",
+        "documents",
+        "frontend",
+        "mcp",
+        "testing",
+        "claude-md"
+      ]
+    }
+  ]
+}

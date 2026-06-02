@@ -1,0 +1,87 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-plugins-official",
+  "description": "Local collection of official Claude Code plugins kept in this directory.",
+  "owner": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "plugins": [
+    {
+      "name": "code-modernization",
+      "version": "1.0.0",
+      "description": "Modernize legacy codebases with a structured assess, map, extract-rules, brief, reimagine or transform, and harden workflow plus specialist review agents.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./code-modernization",
+      "category": "development",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization",
+      "keywords": [
+        "modernization",
+        "legacy-code",
+        "migration",
+        "agents",
+        "workflow"
+      ]
+    },
+    {
+      "name": "feature-dev",
+      "version": "1.0.0",
+      "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, implementation guidance, and quality review.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./feature-dev",
+      "category": "development",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/feature-dev",
+      "keywords": [
+        "feature-development",
+        "agents",
+        "architecture",
+        "code-review",
+        "workflow"
+      ]
+    },
+    {
+      "name": "ralph-loop",
+      "version": "1.0.0",
+      "description": "Interactive self-referential AI loops for iterative development, implementing the Ralph Wiggum technique inside Claude Code with a Stop hook.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./ralph-loop",
+      "category": "development",
+      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/ralph-loop",
+      "keywords": [
+        "loop",
+        "iteration",
+        "automation",
+        "hooks",
+        "workflow"
+      ]
+    },
+    {
+      "name": "security-guidance",
+      "version": "2.0.0",
+      "description": "Security review for Claude-generated code with pattern-based warnings, LLM-powered diff review on Stop, and agentic commit review for common vulnerability classes.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./security-guidance",
+      "category": "security",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance",
+      "keywords": [
+        "security",
+        "code-review",
+        "hooks",
+        "vulnerabilities",
+        "owasp"
+      ]
+    }
+  ]
+}

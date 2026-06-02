@@ -1,0 +1,18 @@
+{
+  "name": "code-modernization",
+  "version": "1.0.0",
+  "description": "Modernize legacy codebases with a structured assess, map, extract-rules, brief, reimagine or transform, and harden workflow plus specialist review agents.",
+  "author": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "category": "development",
+  "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization",
+  "keywords": [
+    "modernization",
+    "legacy-code",
+    "migration",
+    "agents",
+    "workflow"
+  ]
+}
