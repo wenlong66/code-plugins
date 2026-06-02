@@ -1,0 +1,31 @@
+{
+  "name": "plugin-basics",
+  "owner": {
+    "name": "wenlong"
+  },
+  "metadata": {
+    "description": "Claude Code engineering workflows for onboarding, docs lookup, ADRs, knowledge ops, CLAUDE.md maintenance, playgrounds, and code simplification"
+  },
+  "plugins": [
+    {
+      "name": "plugin-basics",
+      "source": "./",
+      "description": "Claude Code engineering workflows for onboarding, docs lookup, ADRs, knowledge ops, CLAUDE.md maintenance, playgrounds, and code simplification",
+      "version": "1.10.0",
+      "author": {
+        "name": "wenlong"
+      },
+      "license": "MIT",
+      "keywords": [
+        "claude-code",
+        "engineering",
+        "onboarding",
+        "documentation",
+        "adr",
+        "knowledge-management",
+        "code-review"
+      ],
+      "strict": false
+    }
+  ]
+}
