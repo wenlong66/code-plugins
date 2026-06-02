@@ -1,0 +1,23 @@
+{
+  "name": "ecc-social",
+  "owner": {
+    "name": "ecc"
+  },
+  "metadata": {
+    "description": "social"
+  },
+  "plugins": [
+    {
+      "name": "social",
+      "source": "./",
+      "description": "social",
+      "version": "1.10.0",
+      "author": {
+        "name": "ecc"
+      },
+      "license": "MIT",
+      "keywords": [],
+      "strict": false
+    }
+  ]
+}

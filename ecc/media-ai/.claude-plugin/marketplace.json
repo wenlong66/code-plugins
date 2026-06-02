@@ -1,0 +1,23 @@
+{
+  "name": "ecc-media-ai",
+  "owner": {
+    "name": "ecc"
+  },
+  "metadata": {
+    "description": "media-ai"
+  },
+  "plugins": [
+    {
+      "name": "media-ai",
+      "source": "./",
+      "description": "media-ai",
+      "version": "1.10.0",
+      "author": {
+        "name": "ecc"
+      },
+      "license": "MIT",
+      "keywords": [],
+      "strict": false
+    }
+  ]
+}

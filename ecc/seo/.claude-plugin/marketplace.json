@@ -1,0 +1,23 @@
+{
+  "name": "ecc-seo",
+  "owner": {
+    "name": "ecc"
+  },
+  "metadata": {
+    "description": "seo"
+  },
+  "plugins": [
+    {
+      "name": "seo",
+      "source": "./",
+      "description": "seo",
+      "version": "1.10.0",
+      "author": {
+        "name": "ecc"
+      },
+      "license": "MIT",
+      "keywords": [],
+      "strict": false
+    }
+  ]
+}

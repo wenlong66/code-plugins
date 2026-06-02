@@ -1,0 +1,23 @@
+{
+  "name": "ecc-common",
+  "owner": {
+    "name": "ecc"
+  },
+  "metadata": {
+    "description": "common"
+  },
+  "plugins": [
+    {
+      "name": "common",
+      "source": "./",
+      "description": "common",
+      "version": "1.10.0",
+      "author": {
+        "name": "ecc"
+      },
+      "license": "MIT",
+      "keywords": [],
+      "strict": false
+    }
+  ]
+}
