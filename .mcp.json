@@ -6,24 +6,44 @@
     },
     "fetch": {
       "args": [
-        "mcp-server-fetch"
+        "-m",
+        "mcp_server_fetch"
       ],
-      "command": "uvx",
-      "type": "stdio"
+      "command": "python",
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
     },
     "memory": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"]
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
     },
     "filesystem": {
       "args": [
-        "/c",
-        "npx",
         "-y",
         "@modelcontextprotocol/server-filesystem",
         "E:/work"
       ],
-      "command": "cmd"
+      "command": "npx"
+    },
+    "sequential-thinking": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "command": "npx"
+    },
+    "playwright": {
+      "args": [
+        "-y",
+        "@playwright/mcp",
+        "--browser",
+        "chrome"
+      ],
+      "command": "npx"
     }
   }
 }
