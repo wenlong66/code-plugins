@@ -33,4 +33,4 @@
 	url = https://github.com/CoplayDev/unity-mcp.git
 [submodule "agent-skills"]
 	path = agent-skills
-	url = https://github.com/addyosmani/agent-skills.git
+	url = https://github.com/wenlong66/agent-skills.git
