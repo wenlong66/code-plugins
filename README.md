@@ -4,8 +4,11 @@
 
 ## 内容
 
-- `ecc/`：自定义 agents、commands、skills。
-- `official/`：官方 agents、commands、hooks、skills。
+- `ecc/`：按 common、media-ai、seo、social 等场景整理的自定义 agents、commands、skills。
+- `plugin-basics/`：日常仓库工作流插件，包含代码库 onboarding、文档查询、ADR、知识管理、会话报告和代码简化等能力。
+- `claude-plugin-common/`：Claude Code 常用插件集合，覆盖文档处理、前端设计、MCP 开发、Web 应用测试等场景。
+- `claude-plugins-official/`：官方插件市场目录及本地插件副本。
+- `superpowers-ext/`：在 superpowers 方法论基础上扩展的工程技能。
 - Git submodules：第三方或独立维护的插件、技能、MCP 项目。
 
 ## 克隆
@@ -25,6 +28,7 @@ git submodule update --init --recursive
 <!-- AUTO-GENERATED:SUBMODULES -->
 | 路径 | 仓库 | 说明 |
 |---|---|---|
+| `agent-skills` | https://github.com/addyosmani/agent-skills.git | Addy Osmani 的生产级 AI 编码代理工程技能，覆盖 spec、plan、build、test、review、simplify 和 ship 等流程。 |
 | `andrej-karpathy-skills` | https://github.com/multica-ai/andrej-karpathy-skills.git | 受 Karpathy 启发的 Claude Code 行为准则，强调先思考、保持简单、精准修改和可验证执行。 |
 | `caveman` | https://github.com/JuliusBrussee/caveman.git | 面向 Claude Code、Codex 等代理的“穴居人式”精简表达插件，用更少 token 保持技术准确性。 |
 | `claude-code-gs` | https://github.com/wenlong66/claude-code-gs.git | Claude Code 游戏工作室模板，提供面向游戏开发的多 agent、skills、hooks 和项目流程。 |
