@@ -13,9 +13,6 @@
 [submodule "claude-mem"]
 	path = claude-mem
 	url = https://github.com/thedotmack/claude-mem.git
-[submodule "godot-mcp-pro"]
-	path = godot-mcp-pro
-	url = https://github.com/youichi-uda/godot-mcp-pro.git
 [submodule "gstack"]
 	path = gstack
 	url = https://github.com/wenlong66/gstack.git
@@ -34,3 +31,6 @@
 [submodule "agent-skills"]
 	path = agent-skills
 	url = https://github.com/wenlong66/agent-skills.git
+[submodule "godot-mcp"]
+	path = godot-mcp
+	url = https://github.com/Coding-Solo/godot-mcp.git
