@@ -34,3 +34,6 @@
 [submodule "godot-mcp"]
 	path = godot-mcp
 	url = https://github.com/Coding-Solo/godot-mcp.git
+[submodule "codegraph"]
+	path = codegraph
+	url = https://github.com/colbymchenry/codegraph.git
