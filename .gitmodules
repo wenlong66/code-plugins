@@ -37,3 +37,6 @@
 [submodule "codegraph"]
 	path = codegraph
 	url = https://github.com/colbymchenry/codegraph.git
+[submodule "vercel-skills"]
+	path = vercel-skills
+	url = https://github.com/wenlong66/vercel-skills.git

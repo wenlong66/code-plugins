@@ -41,4 +41,5 @@ git submodule update --init --recursive
 | `superpowers` | https://github.com/obra/superpowers.git | 面向编码代理的软件开发方法论插件，通过组合 skills 规范头脑风暴、计划、TDD、执行和验证流程。 |
 | `ui-ux-pro-max-skill` | https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git | AI UI/UX 设计智能技能，提供设计系统、风格、配色、字体、图表和平台化前端建议。 |
 | `unity-mcp` | https://github.com/CoplayDev/unity-mcp.git | MCP for Unity，让 AI 助手通过 MCP 控制 Unity Editor、管理场景资产、脚本和测试。 |
+| `vercel-skills` | https://github.com/wenlong66/vercel-skills.git | 面向 Vercel 项目的 AI 代理技能集合，覆盖部署、React/Next 最佳实践、Web 设计审查与文档写作规范。 |
 <!-- /AUTO-GENERATED:SUBMODULES -->
