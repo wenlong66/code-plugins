@@ -1,0 +1,44 @@
+{
+    "name":  "plugins",
+    "interface":  {
+                      "displayName":  "Local Personal Plugins"
+                  },
+    "plugins":  [
+            {
+                "name":  "gstack",
+                "source":  {
+                                "source":  "local",
+                                "path":  "./gstack"
+                            },
+                "policy":  {
+                                "installation":  "AVAILABLE",
+                                "authentication":  "ON_INSTALL"
+                            },
+                "category":  "Coding"
+            },
+            {
+                "name":  "claude-mem",
+                "source":  {
+                                "source":  "local",
+                                "path":  "./claude-mem"
+                            },
+                "policy":  {
+                                "installation":  "AVAILABLE",
+                                "authentication":  "ON_INSTALL"
+                            },
+                "category":  "Coding"
+            },
+            {
+                "name":  "caveman",
+                "source":  {
+                                "source":  "local",
+                                "path":  "./caveman/plugins/caveman"
+                            },
+                "policy":  {
+                                "installation":  "AVAILABLE",
+                                "authentication":  "ON_INSTALL"
+                            },
+                "category":  "Coding"
+            }
+    ]
+}
