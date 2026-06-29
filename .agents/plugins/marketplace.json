@@ -20,7 +20,7 @@
                 "name":  "gstack",
                 "source":  {
                                 "source":  "local",
-                                "path":  "./gstack"
+                                "path":  "./gstack/.agents"
                             },
                 "policy":  {
                                 "installation":  "AVAILABLE",
