@@ -1,42 +1,56 @@
 [submodule "andrej-karpathy-skills"]
 	path = andrej-karpathy-skills
 	url = https://github.com/multica-ai/andrej-karpathy-skills.git
+	branch = main
 [submodule "claude-code-gs"]
 	path = claude-code-gs
 	url = https://github.com/wenlong66/claude-code-gs.git
+	branch = main
 [submodule "claude-code-novel"]
 	path = claude-code-novel
 	url = https://github.com/wenlong66/claude-code-novel.git
+	branch = novel
 [submodule "agent-skills"]
 	path = agent-skills
 	url = https://github.com/wenlong66/agent-skills.git
+	branch = main
 [submodule "caveman"]
 	path = caveman
 	url = https://github.com/JuliusBrussee/caveman.git
+	branch = main
 [submodule "claude-mem"]
 	path = claude-mem
 	url = https://github.com/wenlong66/claude-mem.git
+	branch = main
 [submodule "gstack"]
 	path = gstack
 	url = https://github.com/wenlong66/gstack.git
+	branch = plugin
 [submodule "superpowers"]
 	path = superpowers
 	url = https://github.com/wenlong66/superpowers.git
+	branch = main
 [submodule "hyperframes"]
 	path = hyperframes
 	url = https://github.com/heygen-com/hyperframes.git
+	branch = main
 [submodule "ui-ux-pro-max-skill"]
 	path = ui-ux-pro-max-skill
 	url = https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+	branch = main
 [submodule "unity-mcp"]
 	path = unity-mcp
 	url = https://github.com/CoplayDev/unity-mcp.git
+	branch = beta
 [submodule "godot-mcp"]
 	path = godot-mcp
 	url = https://github.com/Coding-Solo/godot-mcp.git
+	branch = main
 [submodule "codegraph"]
 	path = codegraph
 	url = https://github.com/colbymchenry/codegraph.git
+	branch = main
 [submodule "vercel-skills"]
 	path = vercel-skills
 	url = https://github.com/wenlong66/vercel-skills.git
+	branch = main
