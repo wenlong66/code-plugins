@@ -38,8 +38,46 @@ git submodule update --init --recursive
 | `godot-mcp` | https://github.com/Coding-Solo/godot-mcp.git | Godot 引擎 MCP 服务器，让 AI 代理启动编辑器、运行项目、捕获调试输出并控制 Godot 项目执行。 |
 | `gstack` | https://github.com/wenlong66/gstack.git | Garry Tan 的 Claude Code 工程团队技能栈，包含评审、QA、浏览器、发布和安全等工作流。 |
 | `hyperframes` | https://github.com/heygen-com/hyperframes.git | 用 HTML、CSS 和可寻址动画生成确定性 MP4 视频的开源框架，内置面向 AI 代理的创作技能。 |
+| `ponytail` | https://github.com/wenlong66/ponytail.git | 面向 AI 代理的极简工程技能，强调复用现有代码、标准库和平台能力，只写任务真正需要的最小实现。 |
 | `superpowers` | https://github.com/wenlong66/superpowers.git | 面向编码代理的软件开发方法论插件，通过组合 skills 规范头脑风暴、计划、TDD、执行和验证流程。 |
 | `ui-ux-pro-max-skill` | https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git | AI UI/UX 设计智能技能，提供设计系统、风格、配色、字体、图表和平台化前端建议。 |
 | `unity-mcp` | https://github.com/CoplayDev/unity-mcp.git | MCP for Unity，让 AI 助手通过 MCP 控制 Unity Editor、管理场景资产、脚本和测试。 |
 | `vercel-skills` | https://github.com/wenlong66/vercel-skills.git | 面向 Vercel 项目的 AI 代理技能集合，覆盖部署、React/Next 最佳实践、Web 设计审查与文档写作规范。 |
 <!-- /AUTO-GENERATED:SUBMODULES -->
+
+## 快速启动
+
+### Codegraph
+
+```bash
+npx @colbymchenry/codegraph
+codegraph upgrade
+
+cd your-project
+codegraph init -i
+```
+
+### Unity MCP
+
+Requirements：Unity 2021.3 LTS → 6.x，Python 3.10+（通过 uv）。支持任意 MCP client，包括 Claude Desktop & Code、Cursor、VS Code、Windsurf、Cline、Gemini CLI 等。
+
+安装：Unity → Package Manager → Add from git URL：
+
+```text
+https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main
+```
+
+如果需要固定版本，可以将 `#main` 改为对应 tag，例如 `#v10.0.0`；也可以使用 OpenUPM：
+
+```bash
+openupm add com.coplaydev.unity-mcp
+```
+
+配置：Unity 菜单中打开 Window → MCP for Unity → Configure All Detected Clients。
+
+示例提示词：
+
+```text
+Create a cube at the origin and add a Rigidbody.
+```
+

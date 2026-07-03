@@ -9,13 +9,7 @@ if ($LASTEXITCODE -ne 0) {
     exit $LASTEXITCODE
 }
 
-Write-Host '==> Initializing submodules'
-git submodule update --init --recursive
-if ($LASTEXITCODE -ne 0) {
-    exit $LASTEXITCODE
-}
-
-Write-Host '==> Updating submodules to latest configured branches'
+Write-Host '==> Updating existing submodules to latest configured branches'
 $submodulePaths = git config --file .gitmodules --get-regexp '^submodule\..*\.path$'
 if ($LASTEXITCODE -ne 0) {
     exit $LASTEXITCODE
@@ -29,6 +23,11 @@ foreach ($submodulePathEntry in $submodulePaths) {
 
     $submoduleName = $Matches[1]
     $submodulePath = $Matches[2]
+    if (-not (Test-Path -LiteralPath $submodulePath -PathType Container)) {
+        Write-Host "==> Skipping ${submoduleName}: $submodulePath does not exist"
+        continue
+    }
+
     $branch = git config --file .gitmodules --get "submodule.$submoduleName.branch"
     if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($branch)) {
         Write-Error "No branch configured for submodule: $submoduleName"

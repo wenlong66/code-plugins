@@ -14,25 +14,11 @@
         "PYTHONIOENCODING": "utf-8"
       }
     },
-    "memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
-    },
     "filesystem": {
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
         "E:/work"
-      ],
-      "command": "npx"
-    },
-    "sequential-thinking": {
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
       ],
       "command": "npx"
     },
@@ -44,6 +30,22 @@
         "chrome"
       ],
       "command": "npx"
+    },
+    "godot": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "@coding-solo/godot-mcp"
+      ],
+      "env": {
+        "GODOT_PATH": "D:/Program Files/Godot",
+        "DEBUG": "true"
+      }
+    },
+    "unityMCP": {
+      "type": "http",
+      "url": "http://localhost:8080/mcp"
     }
   }
 }
