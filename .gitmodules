@@ -54,3 +54,7 @@
 	path = vercel-skills
 	url = https://github.com/wenlong66/vercel-skills.git
 	branch = main
+[submodule "ponytail"]
+	path = ponytail
+	url = https://github.com/wenlong66/ponytail.git
+	branch = main
