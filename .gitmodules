@@ -58,3 +58,7 @@
 	path = ponytail
 	url = https://github.com/wenlong66/ponytail.git
 	branch = main
+[submodule "mattpocock-skills"]
+	path = mattpocock-skills
+	url = https://github.com/wenlong66/mattpocock-skills.git
+	branch = main
