@@ -1,0 +1,106 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "code-plugins",
+  "description": "Local Claude Code plugin marketplace for curated engineering, memory, video, design, and productivity plugins.",
+  "owner": {
+    "name": "wenlong66",
+    "url": "https://github.com/wenlong66"
+  },
+  "plugins": [
+    {
+      "name": "agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents — covering the full software development lifecycle from spec to ship.",
+      "source": "./agent-skills",
+      "author": {
+        "name": "Addy Osmani"
+      },
+      "homepage": "https://github.com/addyosmani/agent-skills",
+      "repository": "https://github.com/addyosmani/agent-skills",
+      "license": "MIT"
+    },
+    {
+      "name": "claude-mem",
+      "description": "Memory compression system for Claude Code - persist context across sessions.",
+      "version": "13.10.2",
+      "source": "./claude-mem/plugin",
+      "author": {
+        "name": "Alex Newman"
+      },
+      "repository": "https://github.com/thedotmack/claude-mem",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "gstack",
+      "description": "Garry's Stack — Claude Code skills plus fast browser automation for AI-assisted engineering workflows.",
+      "version": "1.58.5.0",
+      "source": "./gstack",
+      "author": {
+        "name": "Garry Tan",
+        "url": "https://github.com/garrytan"
+      },
+      "homepage": "https://github.com/garrytan/gstack#readme",
+      "repository": "https://github.com/garrytan/gstack",
+      "license": "MIT"
+    },
+    {
+      "name": "hyperframes",
+      "description": "HyperFrames by HeyGen. Write HTML, render video. Compositions, GSAP and runtime adapter animations, captions, voiceovers, audio-reactive visuals, and website-to-video capture for HyperFrames.",
+      "version": "0.7.57",
+      "source": "./hyperframes",
+      "author": {
+        "name": "HeyGen",
+        "email": "hyperframes@heygen.com",
+        "url": "https://hyperframes.heygen.com"
+      },
+      "homepage": "https://hyperframes.heygen.com",
+      "repository": "https://github.com/heygen-com/hyperframes",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mattpocock-skills",
+      "description": "Matt Pocock's agent skills for real engineering — grilling, spec/ticket flows, TDD, code review, domain modelling and more. Plug-and-play, not vibe coding.",
+      "version": "1.2.0",
+      "source": "./mattpocock-skills",
+      "author": {
+        "name": "Matt Pocock",
+        "url": "https://www.aihero.dev"
+      },
+      "homepage": "https://www.aihero.dev/s/skills-newsletter",
+      "repository": "https://github.com/mattpocock/skills",
+      "license": "MIT"
+    },
+    {
+      "name": "ponytail",
+      "description": "Lazy senior dev mode. Forces the simplest, shortest solution that actually works: YAGNI, stdlib first, no unrequested abstractions.",
+      "version": "4.8.4",
+      "source": "./ponytail",
+      "author": {
+        "name": "Dietrich Gebert",
+        "url": "https://github.com/DietrichGebert"
+      }
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "description": "UI/UX design intelligence. Searchable local database with 84 styles, 161 palettes, 73 font pairings, 25 charts, and 17 stacks.",
+      "version": "2.11.0",
+      "source": "./ui-ux-pro-max-skill",
+      "author": {
+        "name": "nextlevelbuilder"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "superpowers",
+      "description": "Core skills library for Claude Code: TDD, debugging, collaboration patterns, and proven techniques.",
+      "version": "6.1.1",
+      "source": "./superpowers",
+      "author": {
+        "name": "Jesse Vincent",
+        "email": "jesse@fsck.com"
+      },
+      "homepage": "https://github.com/obra/superpowers",
+      "repository": "https://github.com/obra/superpowers",
+      "license": "MIT"
+    }
+  ]
+}
