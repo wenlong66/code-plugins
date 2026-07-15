@@ -1,18 +1,8 @@
 {
   "name": "code-modernization",
-  "version": "1.0.0",
-  "description": "Modernize legacy codebases with a structured assess, map, extract-rules, brief, reimagine or transform, and harden workflow plus specialist review agents.",
+  "description": "Modernize legacy codebases (COBOL, legacy Java/C++/.NET, monolith web apps) with a structured preflight / assess / map / extract-rules / brief / (reimagine | transform | uplift) / harden / status workflow. Cross-stack rewrites, greenfield reimagining, and same-stack version uplifts (e.g. .NET Framework → .NET 8); an interactive topology viewer; specialist agents; and optional dynamic-workflow orchestration with adversarial verification.",
   "author": {
     "name": "Anthropic",
     "email": "support@anthropic.com"
-  },
-  "category": "development",
-  "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization",
-  "keywords": [
-    "modernization",
-    "legacy-code",
-    "migration",
-    "agents",
-    "workflow"
-  ]
+  }
 }
