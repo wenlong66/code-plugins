@@ -36,7 +36,7 @@
 	branch = main
 [submodule "ui-ux-pro-max-skill"]
 	path = ui-ux-pro-max-skill
-	url = https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+	url = https://github.com/wenlong66/ui-ux-pro-max-skill.git
 	branch = main
 [submodule "unity-mcp"]
 	path = unity-mcp
