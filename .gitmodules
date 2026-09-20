@@ -62,3 +62,7 @@
 	path = mattpocock-skills
 	url = https://github.com/wenlong66/mattpocock-skills.git
 	branch = main
+[submodule "mattpocock-ext"]
+	path = mattpocock-ext
+	url = https://github.com/wenlong66/mattpocock-ext.git
+	branch = main
