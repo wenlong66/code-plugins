@@ -70,6 +70,18 @@
       "license": "MIT"
     },
     {
+      "name": "matt-plus",
+      "description": "精选并适配的 Matt Pocock 扩展：生产设计、安全、发布与文档维护。",
+      "version": "0.3.0",
+      "source": "./matt-plus",
+      "author": {
+        "name": "Long"
+      },
+      "homepage": "https://github.com/wenlong66/matt-plus",
+      "repository": "https://github.com/wenlong66/matt-plus",
+      "license": "MIT"
+    },
+    {
       "name": "ponytail",
       "description": "Lazy senior dev mode. Forces the simplest, shortest solution that actually works: YAGNI, stdlib first, no unrequested abstractions.",
       "version": "4.8.4",
