@@ -1,0 +1,23 @@
+{
+  "skill_name": "android-apk-build",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "这个 Expo + pnpm monorepo 已经能在 Expo Go 中运行，帮我打出一个能直接发给测试同事安装的安卓包。项目在 E:\\work\\MenuPicker。",
+      "expected_output": "Detects an Expo Managed/CNG project, defaults to an installable Debug APK, checks JDK/SDK, preserves any generated native project, builds and verifies the APK, and reports its path.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "React Native 项目在 Windows 上 assembleDebug 报 CMAKE_OBJECT_PATH_MAX，接着给我打 APK，不要改新架构配置。",
+      "expected_output": "Recognizes the Windows pnpm/CMake path-length failure, uses a short temporary workspace with a hoisted pnpm install, preserves the original checkout, and returns a verified APK.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "请把这个 Android Gradle 工程打成 Google Play 能上传的 aab，并顺手发布到 Play Console。",
+      "expected_output": "Distinguishes this release/publishing request from a default Debug APK build and asks for explicit signing and publishing authorization instead of publishing automatically.",
+      "files": []
+    }
+  ]
+}
