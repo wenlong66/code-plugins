@@ -57,6 +57,18 @@
       "license": "Apache-2.0"
     },
     {
+      "name": "impeccable",
+      "description": "Design fluency for frontend development. 1 skill with 24 commands and curated anti-pattern detection.",
+      "version": "4.5.2",
+      "source": "./impeccable/plugin",
+      "author": {
+        "name": "Paul Bakaus"
+      },
+      "homepage": "https://impeccable.style",
+      "repository": "https://github.com/wenlong66/impeccable",
+      "license": "Apache-2.0"
+    },
+    {
       "name": "mattpocock-skills",
       "description": "Matt Pocock's agent skills for real engineering — grilling, spec/ticket flows, TDD, code review, domain modelling and more. Plug-and-play, not vibe coding.",
       "version": "1.2.0",
@@ -71,7 +83,7 @@
     },
     {
       "name": "matt-plus",
-      "description": "原版技能的独立适配：UI 设计与实现、文档生成与同步、安全加固。",
+      "description": "原版技能移植：设计咨询、文档生成与同步、安全审计、React Native 与代码简化。",
       "version": "0.3.0",
       "source": "./matt-plus",
       "author": {

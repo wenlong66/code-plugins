@@ -38,9 +38,11 @@ git submodule update --init --recursive
 | `godot-mcp` | https://github.com/Coding-Solo/godot-mcp.git | Godot 引擎 MCP 服务器，让 AI 代理启动编辑器、运行项目、捕获调试输出并控制 Godot 项目执行。 |
 | `gstack` | https://github.com/wenlong66/gstack.git | Garry Tan 的 Claude Code 工程团队技能栈，包含评审、QA、浏览器、发布和安全等工作流。 |
 | `hyperframes` | https://github.com/heygen-com/hyperframes.git | 用 HTML、CSS 和可寻址动画生成确定性 MP4 视频的开源框架，内置面向 AI 代理的创作技能。 |
+| `impeccable` | https://github.com/wenlong66/impeccable.git | 面向 AI 编码代理的前端设计技能，提供设计审查、润色、可访问性检查和反模式检测等命令。 |
 | `matt-plus` | https://github.com/wenlong66/matt-plus.git | Matt Pocock 相关 Claude Code/Codex 技能的扩展与补充。 |
 | `mattpocock-skills` | https://github.com/wenlong66/mattpocock-skills.git | Matt Pocock 的真实工程 AI 代理技能，覆盖 grilling、spec/ticket 流程、TDD、代码评审、领域建模和架构改进。 |
 | `ponytail` | https://github.com/wenlong66/ponytail.git | 面向 AI 代理的极简工程技能，强调复用现有代码、标准库和平台能力，只写任务真正需要的最小实现。 |
+| `security-audit-skill` | https://github.com/cloudflare/security-audit-skill.git | Cloudflare 的安全审计技能，覆盖架构侦察、漏洞挖掘、候选验证、独立复核和结构化报告。 |
 | `superpowers` | https://github.com/wenlong66/superpowers.git | 面向编码代理的软件开发方法论插件，通过组合 skills 规范头脑风暴、计划、TDD、执行和验证流程。 |
 | `ui-ux-pro-max-skill` | https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git | AI UI/UX 设计智能技能，提供设计系统、风格、配色、字体、图表和平台化前端建议。 |
 | `unity-mcp` | https://github.com/CoplayDev/unity-mcp.git | MCP for Unity，让 AI 助手通过 MCP 控制 Unity Editor、管理场景资产、脚本和测试。 |

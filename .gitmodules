@@ -66,3 +66,11 @@
 	path = matt-plus
 	url = https://github.com/wenlong66/matt-plus.git
 	branch = main
+[submodule "impeccable"]
+	path = impeccable
+	url = https://github.com/wenlong66/impeccable.git
+	branch = main
+[submodule "security-audit-skill"]
+	path = security-audit-skill
+	url = https://github.com/cloudflare/security-audit-skill.git
+	branch = main
