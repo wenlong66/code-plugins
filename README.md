@@ -31,6 +31,7 @@ git submodule update --init --recursive
 | `agent-skills` | https://github.com/wenlong66/agent-skills.git | Addy Osmani 的生产级 AI 编码代理工程技能，覆盖 spec、plan、build、test、review、simplify 和 ship 等流程。 |
 | `andrej-karpathy-skills` | https://github.com/multica-ai/andrej-karpathy-skills.git | 受 Karpathy 启发的 Claude Code 行为准则，强调先思考、保持简单、精准修改和可验证执行。 |
 | `caveman` | https://github.com/JuliusBrussee/caveman.git | 面向 Claude Code、Codex 等代理的“穴居人式”精简表达插件，用更少 token 保持技术准确性。 |
+| `chrome-devtools-mcp` | https://github.com/ChromeDevTools/chrome-devtools-mcp | 通过 MCP 让代理控制 Chrome，检查控制台、网络请求和性能 trace，适合浏览器调试与性能分析。 |
 | `claude-code-gs` | https://github.com/wenlong66/claude-code-gs.git | Claude Code 游戏工作室模板，提供面向游戏开发的多 agent、skills、hooks 和项目流程。 |
 | `claude-code-novel` | https://github.com/wenlong66/claude-code-novel.git | 基于 Claude Code 的长篇网文创作系统，用于管理角色、伏笔、世界观和章节连续性。 |
 | `claude-mem` | https://github.com/wenlong66/claude-mem.git | Claude Code 持久记忆压缩系统，跨会话保存、检索和注入相关开发上下文。 |
@@ -42,6 +43,7 @@ git submodule update --init --recursive
 | `markitdown` | https://github.com/microsoft/markitdown.git | 微软维护的文档转 Markdown Python 工具，支持 PDF、Word、Excel、PowerPoint、HTML 等格式，便于生成适合 LLM 阅读的文本。 |
 | `matt-plus` | https://github.com/wenlong66/matt-plus.git | Matt Pocock 相关 Claude Code/Codex 技能的扩展与补充。 |
 | `mattpocock-skills` | https://github.com/wenlong66/mattpocock-skills.git | Matt Pocock 的真实工程 AI 代理技能，覆盖 grilling、spec/ticket 流程、TDD、代码评审、领域建模和架构改进。 |
+| `playwright-cli` | https://github.com/microsoft/playwright-cli | 微软维护的浏览器自动化 CLI，可配合 Skills 完成页面操作、截图和测试，适合编码代理的命令行工作流。 |
 | `ponytail` | https://github.com/wenlong66/ponytail.git | 面向 AI 代理的极简工程技能，强调复用现有代码、标准库和平台能力，只写任务真正需要的最小实现。 |
 | `security-audit-skill` | https://github.com/cloudflare/security-audit-skill.git | Cloudflare 的安全审计技能，覆盖架构侦察、漏洞挖掘、候选验证、独立复核和结构化报告。 |
 | `superpowers` | https://github.com/wenlong66/superpowers.git | 面向编码代理的软件开发方法论插件，通过组合 skills 规范头脑风暴、计划、TDD、执行和验证流程。 |
@@ -53,8 +55,6 @@ git submodule update --init --recursive
 ## 快速启动
 
 ### Chrome DevTools MCP
-
-[Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) 让代理控制 Chrome，检查控制台、网络请求和性能 trace，适合浏览器调试与性能分析。
 
 Requirements：Node.js LTS、npm 和当前稳定版或更新的 Google Chrome。
 
@@ -176,8 +176,6 @@ markitdown-mcp
 仅转换可信文件或 URL；MCP 服务可读取运行用户有权限访问的文件和网络资源，不要向公网开放。使用外部模型或云服务前，确认文档允许发送给相应服务。
 
 ### Playwright CLI
-
-[Playwright CLI](https://github.com/microsoft/playwright-cli) 是微软维护的浏览器自动化 CLI，可配合 Skills 完成页面操作、截图和测试，适合编码代理的命令行工作流。
 
 Requirements：Node.js 18+。它是 CLI 工具，不是 [Playwright MCP](https://github.com/microsoft/playwright-mcp)，不需要配置 MCP 服务器。
 
