@@ -1,6 +1,6 @@
 # code-plugins
 
-个人觉得比较好用的 Claude Code、Codex 插件和技能统一管理收藏。
+个人觉得比较好用的 Claude Code、Codex 插件、技能及配套工具统一管理收藏。
 
 ## 内容
 
@@ -9,7 +9,7 @@
 - `claude-plugin-common/`：Claude Code 常用插件集合，覆盖文档处理、前端设计、MCP 开发、Web 应用测试等场景。
 - `claude-plugins-official/`：官方插件市场目录及本地插件副本。
 - `superpowers-ext/`：在 superpowers 方法论基础上扩展的工程技能。
-- Git submodules：第三方或独立维护的插件、技能、MCP 项目。
+- Git submodules：第三方或独立维护的插件、技能、MCP 项目和 Python 工具。
 
 ## 克隆
 
@@ -39,6 +39,7 @@ git submodule update --init --recursive
 | `gstack` | https://github.com/wenlong66/gstack.git | Garry Tan 的 Claude Code 工程团队技能栈，包含评审、QA、浏览器、发布和安全等工作流。 |
 | `hyperframes` | https://github.com/heygen-com/hyperframes.git | 用 HTML、CSS 和可寻址动画生成确定性 MP4 视频的开源框架，内置面向 AI 代理的创作技能。 |
 | `impeccable` | https://github.com/wenlong66/impeccable.git | 面向 AI 编码代理的前端设计技能，提供设计审查、润色、可访问性检查和反模式检测等命令。 |
+| `markitdown` | https://github.com/microsoft/markitdown.git | 微软维护的文档转 Markdown Python 工具，支持 PDF、Word、Excel、PowerPoint、HTML 等格式，便于生成适合 LLM 阅读的文本。 |
 | `matt-plus` | https://github.com/wenlong66/matt-plus.git | Matt Pocock 相关 Claude Code/Codex 技能的扩展与补充。 |
 | `mattpocock-skills` | https://github.com/wenlong66/mattpocock-skills.git | Matt Pocock 的真实工程 AI 代理技能，覆盖 grilling、spec/ticket 流程、TDD、代码评审、领域建模和架构改进。 |
 | `ponytail` | https://github.com/wenlong66/ponytail.git | 面向 AI 代理的极简工程技能，强调复用现有代码、标准库和平台能力，只写任务真正需要的最小实现。 |
@@ -60,6 +61,42 @@ codegraph upgrade
 cd your-project
 codegraph init -i
 ```
+
+### MarkItDown
+
+[MarkItDown](https://github.com/microsoft/markitdown) 是微软维护的 Python 文档转 Markdown 工具，可将 PDF、Word、Excel、PowerPoint、HTML 等内容转换为适合 LLM 阅读的文本。它不是 Skill 或 Claude Code 插件：本仓库通过 [markitdown/](markitdown/) 子模块收藏源码，克隆或更新子模块不会自动安装 Python 包，也不需要通过插件市场安装。
+
+**安装 CLI**：当前上游要求 Python 3.10–3.14，建议在已激活的虚拟环境中安装：
+
+```bash
+python -m pip install 'markitdown[all]'
+markitdown --help
+```
+
+`[all]` 安装所有格式的可选 Python 依赖；只处理常见办公文档时，可改用 `python -m pip install 'markitdown[pdf,docx,pptx,xlsx]'`。扫描件 OCR、图像描述和云端转换可能需要额外插件、模型或服务配置，不能仅靠 `[all]` 完成。
+
+**使用**：
+
+```bash
+markitdown path-to-file.pdf -o document.md
+```
+
+随后让 Claude Code 或 Codex 读取生成的 `document.md` 即可，无需 MCP。如果需要开发或使用本仓库固定的源码版本，可从本仓库根目录执行以下命令，替代上面的 PyPI 安装：
+
+```bash
+python -m pip install -e './markitdown/packages/markitdown[all]'
+```
+
+**可选 MCP**：需要代理直接调用转换工具时，另行安装官方 `markitdown-mcp` 包：
+
+```bash
+python -m pip install markitdown-mcp
+markitdown-mcp
+```
+
+在 MCP 客户端中将 `markitdown-mcp` 配置为 stdio 启动命令；若使用虚拟环境，应填写该环境内可执行文件的绝对路径。服务提供 `convert_to_markdown(uri)`，支持 `file:`、`http:`、`https:` 和 `data:` URI。详细配置见 [官方 MCP 文档](https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp)。
+
+仅转换可信文件或 URL；MCP 服务可读取运行用户有权限访问的文件和网络资源，不要向公网开放。使用外部模型或云服务前，确认文档允许发送给相应服务。
 
 ### Unity MCP
 
