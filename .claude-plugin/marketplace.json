@@ -60,7 +60,7 @@
       "name": "impeccable",
       "description": "Design fluency for frontend development. 1 skill with 24 commands and curated anti-pattern detection.",
       "version": "4.5.2",
-      "source": "./impeccable/plugin",
+      "source": "./impeccable",
       "author": {
         "name": "Paul Bakaus"
       },

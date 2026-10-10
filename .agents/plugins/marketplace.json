@@ -104,7 +104,7 @@
                 "name":  "impeccable",
                 "source":  {
                                 "source":  "local",
-                                "path":  "./impeccable/plugin"
+                                "path":  "./impeccable"
                             },
                 "policy":  {
                                 "installation":  "AVAILABLE",
