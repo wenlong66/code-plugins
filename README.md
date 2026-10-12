@@ -40,6 +40,7 @@ git submodule update --init --recursive
 | `gstack` | https://github.com/wenlong66/gstack.git | Garry Tan 的 Claude Code 工程团队技能栈，包含评审、QA、浏览器、发布和安全等工作流。 |
 | `hyperframes` | https://github.com/heygen-com/hyperframes.git | 用 HTML、CSS 和可寻址动画生成确定性 MP4 视频的开源框架，内置面向 AI 代理的创作技能。 |
 | `impeccable` | https://github.com/wenlong66/impeccable.git | 面向 AI 编码代理的前端设计技能，提供设计审查、润色、可访问性检查和反模式检测等命令。 |
+| `khazix-skills` | https://github.com/KKKKhazix/khazix-skills.git | 卡兹克的 AI 技能集合，包含目标定义、磁盘分析、AI 资讯查询、文档与记忆收尾、深度研究和长文写作 6 个技能。 |
 | `markitdown` | https://github.com/microsoft/markitdown.git | 微软维护的文档转 Markdown Python 工具，支持 PDF、Word、Excel、PowerPoint、HTML 等格式，便于生成适合 LLM 阅读的文本。 |
 | `matt-plus` | https://github.com/wenlong66/matt-plus.git | Matt Pocock 相关 Claude Code/Codex 技能的扩展与补充。 |
 | `mattpocock-skills` | https://github.com/wenlong66/mattpocock-skills.git | Matt Pocock 的真实工程 AI 代理技能，覆盖 grilling、spec/ticket 流程、TDD、代码评审、领域建模和架构改进。 |
