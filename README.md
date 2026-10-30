@@ -30,6 +30,7 @@ git submodule update --init --recursive
 |---|---|---|
 | `agent-skills` | https://github.com/wenlong66/agent-skills.git | Addy Osmani 的生产级 AI 编码代理工程技能，覆盖 spec、plan、build、test、review、simplify 和 ship 等流程。 |
 | `andrej-karpathy-skills` | https://github.com/multica-ai/andrej-karpathy-skills.git | 受 Karpathy 启发的 Claude Code 行为准则，强调先思考、保持简单、精准修改和可验证执行。 |
+| `awesome-gamedev-agent-skills` | https://github.com/wenlong66/awesome-gamedev-agent-skills.git | 跨引擎游戏开发技能集合，包含 77 个技能和自动路由，覆盖 Godot、Unity、Unreal 等 12 种引擎，以及美术资产、玩法、性能优化和发布流程。 |
 | `caveman` | https://github.com/JuliusBrussee/caveman.git | 面向 Claude Code、Codex 等代理的“穴居人式”精简表达插件，用更少 token 保持技术准确性。 |
 | `chrome-devtools-mcp` | https://github.com/ChromeDevTools/chrome-devtools-mcp | 通过 MCP 让代理控制 Chrome，检查控制台、网络请求和性能 trace，适合浏览器调试与性能分析。 |
 | `claude-code-gs` | https://github.com/wenlong66/claude-code-gs.git | Claude Code 游戏工作室模板，提供面向游戏开发的多 agent、skills、hooks 和项目流程。 |
@@ -39,7 +40,7 @@ git submodule update --init --recursive
 | `godot-mcp` | https://github.com/Coding-Solo/godot-mcp.git | Godot 引擎 MCP 服务器，让 AI 代理启动编辑器、运行项目、捕获调试输出并控制 Godot 项目执行。 |
 | `gstack` | https://github.com/wenlong66/gstack.git | Garry Tan 的 Claude Code 工程团队技能栈，包含评审、QA、浏览器、发布和安全等工作流。 |
 | `hyperframes` | https://github.com/heygen-com/hyperframes.git | 用 HTML、CSS 和可寻址动画生成确定性 MP4 视频的开源框架，内置面向 AI 代理的创作技能。 |
-| `impeccable` | https://github.com/pbakaus/impeccable.git | 面向 AI 编码代理的前端设计技能，提供设计审查、润色、可访问性检查和反模式检测等命令。 |
+| `impeccable` | https://github.com/wenlong66/impeccable.git | 面向 AI 编码代理的前端设计技能，提供设计审查、润色、可访问性检查和反模式检测等命令。 |
 | `khazix-skills` | https://github.com/KKKKhazix/khazix-skills.git | 卡兹克的 AI 技能集合，包含目标定义、磁盘分析、AI 资讯查询、文档与记忆收尾、深度研究和长文写作 6 个技能。 |
 | `markitdown` | https://github.com/microsoft/markitdown.git | 微软维护的文档转 Markdown Python 工具，支持 PDF、Word、Excel、PowerPoint、HTML 等格式，便于生成适合 LLM 阅读的文本。 |
 | `matt-plus` | https://github.com/wenlong66/matt-plus.git | Matt Pocock 相关 Claude Code/Codex 技能的扩展与补充。 |
@@ -55,6 +56,25 @@ git submodule update --init --recursive
 <!-- /AUTO-GENERATED:SUBMODULES -->
 
 ## 快速启动
+
+### Awesome GameDev Agent Skills
+
+本仓库通过 [awesome-gamedev-agent-skills/](awesome-gamedev-agent-skills/) 子模块收藏源码；初始化子模块不会自动安装技能。上游自带 Claude Code 插件市场，可在终端执行：
+
+```bash
+claude plugin marketplace add wenlong66/awesome-gamedev-agent-skills
+claude plugin install gamedev@awesome-gamedev-agent-skills
+```
+
+`gamedev` 包含路由和全部技能；只需特定引擎时，可改为安装 `router@awesome-gamedev-agent-skills` 和对应引擎包（如 `unity@awesome-gamedev-agent-skills`），避免与全量包重复安装。
+
+Codex、Cursor 等其他代理可使用 Skills CLI（需要 Node.js 22.20+）：
+
+```bash
+npx skills add wenlong66/awesome-gamedev-agent-skills
+```
+
+更多安装方式见 [上游安装文档](awesome-gamedev-agent-skills/docs/INSTALLATION.md)。
 
 ### Chrome DevTools MCP
 
