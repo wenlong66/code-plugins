@@ -89,6 +89,18 @@
                 "category":  "Coding"
             },
             {
+                "name":  "taste-skill",
+                "source":  {
+                                "source":  "local",
+                                "path":  "./taste-skill"
+                            },
+                "policy":  {
+                                "installation":  "AVAILABLE",
+                                "authentication":  "ON_INSTALL"
+                            },
+                "category":  "Design"
+            },
+            {
                 "name":  "ui-ux-pro-max",
                 "source":  {
                                 "source":  "local",

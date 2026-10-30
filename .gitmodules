@@ -68,7 +68,7 @@
 	branch = main
 [submodule "impeccable"]
 	path = impeccable
-	url = https://github.com/wenlong66/impeccable.git
+	url = https://github.com/pbakaus/impeccable.git
 	branch = main
 [submodule "security-audit-skill"]
 	path = security-audit-skill
@@ -81,4 +81,8 @@
 [submodule "khazix-skills"]
 	path = khazix-skills
 	url = https://github.com/KKKKhazix/khazix-skills.git
+	branch = main
+[submodule "taste-skill"]
+	path = taste-skill
+	url = https://github.com/Leonxlnx/taste-skill.git
 	branch = main
