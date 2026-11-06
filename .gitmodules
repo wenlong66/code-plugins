@@ -2,14 +2,6 @@
 	path = andrej-karpathy-skills
 	url = https://github.com/multica-ai/andrej-karpathy-skills.git
 	branch = main
-[submodule "claude-code-gs"]
-	path = claude-code-gs
-	url = https://github.com/wenlong66/claude-code-gs.git
-	branch = main
-[submodule "claude-code-novel"]
-	path = claude-code-novel
-	url = https://github.com/wenlong66/claude-code-novel.git
-	branch = novel
 [submodule "agent-skills"]
 	path = agent-skills
 	url = https://github.com/wenlong66/agent-skills.git
@@ -57,7 +49,7 @@
 [submodule "ponytail"]
 	path = ponytail
 	url = https://github.com/wenlong66/ponytail.git
-	branch = v4.13.0
+	branch = main
 [submodule "mattpocock-skills"]
 	path = mattpocock-skills
 	url = https://github.com/wenlong66/mattpocock-skills.git
@@ -89,4 +81,8 @@
 [submodule "awesome-gamedev-agent-skills"]
 	path = awesome-gamedev-agent-skills
 	url = https://github.com/wenlong66/awesome-gamedev-agent-skills.git
+	branch = main
+[submodule "marketingskills"]
+	path = marketingskills
+	url = https://github.com/wenlong66/marketingskills.git
 	branch = main

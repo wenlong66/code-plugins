@@ -33,8 +33,6 @@ git submodule update --init --recursive
 | `awesome-gamedev-agent-skills` | https://github.com/wenlong66/awesome-gamedev-agent-skills.git | 跨引擎游戏开发技能集合，包含 77 个技能和自动路由，覆盖 Godot、Unity、Unreal 等 12 种引擎，以及美术资产、玩法、性能优化和发布流程。 |
 | `caveman` | https://github.com/JuliusBrussee/caveman.git | 面向 Claude Code、Codex 等代理的“穴居人式”精简表达插件，用更少 token 保持技术准确性。 |
 | `chrome-devtools-mcp` | https://github.com/ChromeDevTools/chrome-devtools-mcp | 通过 MCP 让代理控制 Chrome，检查控制台、网络请求和性能 trace，适合浏览器调试与性能分析。 |
-| `claude-code-gs` | https://github.com/wenlong66/claude-code-gs.git | Claude Code 游戏工作室模板，提供面向游戏开发的多 agent、skills、hooks 和项目流程。 |
-| `claude-code-novel` | https://github.com/wenlong66/claude-code-novel.git | 基于 Claude Code 的长篇网文创作系统，用于管理角色、伏笔、世界观和章节连续性。 |
 | `claude-mem` | https://github.com/wenlong66/claude-mem.git | Claude Code 持久记忆压缩系统，跨会话保存、检索和注入相关开发上下文。 |
 | `codegraph` | https://github.com/colbymchenry/codegraph.git | 本地优先的代码语义图与 MCP 工具，为 Claude Code、Codex 等代理提供结构搜索、调用链和影响范围分析。 |
 | `godot-mcp` | https://github.com/Coding-Solo/godot-mcp.git | Godot 引擎 MCP 服务器，让 AI 代理启动编辑器、运行项目、捕获调试输出并控制 Godot 项目执行。 |
@@ -42,6 +40,7 @@ git submodule update --init --recursive
 | `hyperframes` | https://github.com/heygen-com/hyperframes.git | 用 HTML、CSS 和可寻址动画生成确定性 MP4 视频的开源框架，内置面向 AI 代理的创作技能。 |
 | `impeccable` | https://github.com/wenlong66/impeccable.git | 面向 AI 编码代理的前端设计技能，提供设计审查、润色、可访问性检查和反模式检测等命令。 |
 | `khazix-skills` | https://github.com/KKKKhazix/khazix-skills.git | 卡兹克的 AI 技能集合，包含目标定义、磁盘分析、AI 资讯查询、文档与记忆收尾、深度研究和长文写作 6 个技能。 |
+| `marketingskills` | https://github.com/wenlong66/marketingskills.git | 面向 AI 代理的营销技能集合，覆盖转化率优化、营销文案、SEO、数据分析、付费广告和增长策略。 |
 | `markitdown` | https://github.com/microsoft/markitdown.git | 微软维护的文档转 Markdown Python 工具，支持 PDF、Word、Excel、PowerPoint、HTML 等格式，便于生成适合 LLM 阅读的文本。 |
 | `matt-plus` | https://github.com/wenlong66/matt-plus.git | Matt Pocock 相关 Claude Code/Codex 技能的扩展与补充。 |
 | `mattpocock-skills` | https://github.com/wenlong66/mattpocock-skills.git | Matt Pocock 的真实工程 AI 代理技能，覆盖 grilling、spec/ticket 流程、TDD、代码评审、领域建模和架构改进。 |
