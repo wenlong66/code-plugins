@@ -89,6 +89,18 @@
                 "category":  "Coding"
             },
             {
+                "name":  "seo-skills",
+                "source":  {
+                                "source":  "local",
+                                "path":  "./seo-skills"
+                            },
+                "policy":  {
+                                "installation":  "AVAILABLE",
+                                "authentication":  "ON_INSTALL"
+                            },
+                "category":  "Productivity"
+            },
+            {
                 "name":  "taste-skill",
                 "source":  {
                                 "source":  "local",
