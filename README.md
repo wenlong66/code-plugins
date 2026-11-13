@@ -47,6 +47,7 @@ git submodule update --init --recursive
 | `playwright-cli` | https://github.com/microsoft/playwright-cli | 微软维护的浏览器自动化 CLI，可配合 Skills 完成页面操作、截图和测试，适合编码代理的命令行工作流。 |
 | `ponytail` | https://github.com/wenlong66/ponytail.git | 面向 AI 代理的极简工程技能，强调复用现有代码、标准库和平台能力，只写任务真正需要的最小实现。 |
 | `security-audit-skill` | https://github.com/cloudflare/security-audit-skill.git | Cloudflare 的安全审计技能，覆盖架构侦察、漏洞挖掘、候选验证、独立复核和结构化报告。 |
+| `seo-skills` | https://github.com/Illyism/seo-skills.git | 面向 Claude Code、Cursor、Codex 等 AI 代理的 SEO 技能集合，覆盖技术审计、关键词研究、内容优化、AI 搜索可见性和外链建设；安装方式见 [上游文档](seo-skills/README.md#install)。 |
 | `superpowers` | https://github.com/wenlong66/superpowers.git | 面向编码代理的软件开发方法论插件，通过组合 skills 规范头脑风暴、计划、TDD、执行和验证流程。 |
 | `taste-skill` | https://github.com/Leonxlnx/taste-skill.git | 面向网站、产品页、仪表盘和应用界面的前端设计技能，提供设计方向、开放图库素材与真实浏览器检查；运行脚本需要 Node.js 22+ 及 Chrome、Edge 或 Chromium。 |
 | `ui-ux-pro-max-skill` | https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git | AI UI/UX 设计智能技能，提供设计系统、风格、配色、字体、图表和平台化前端建议。 |
@@ -227,6 +228,34 @@ playwright-cli close
 点击、填写等操作可使用 `snapshot` 输出中的元素 ref；例如 `playwright-cli click e15`，其中 `e15` 必须替换为当前页面实际的 ref。截图、网络日志及保存的浏览器状态可能包含敏感信息，分享前应检查内容。
 
 会话管理、测试生成和更多命令见 [官方文档](https://github.com/microsoft/playwright-cli#readme)。
+
+### Unlighthouse
+
+[Unlighthouse](https://github.com/harlan-zw/unlighthouse) 通过 Google Lighthouse 批量审计网站，提供可交互的报告界面，适合检查性能、可访问性、最佳实践和 SEO。它是独立 CLI 工具，不是 Claude Code 插件或 MCP 服务；本仓库仅记录用法，不添加其源码子模块。
+
+**Requirements**：Node.js 22.18+、npm；默认使用系统 Chrome，找不到时会自动下载 Chromium，首次运行需能访问相关下载源。
+
+**运行扫描**：在希望保存报告的目录执行，无需全局安装；将示例 URL 替换为自己的站点：
+
+```bash
+npx unlighthouse@latest --site https://example.com
+```
+
+扫描本地项目时，先用该项目原有命令启动开发或预览服务器，再在另一个终端运行（端口以项目实际配置为准）：
+
+```bash
+npx unlighthouse@latest --site http://localhost:3000
+```
+
+**查看结果**：运行后会自动打开报告界面，也可访问终端输出的本地地址；结果随扫描进度更新，可查看各页面得分和具体 Lighthouse 改进建议。工具通过 sitemap 和站内链接发现页面，默认会对相似路由进行智能抽样，不代表逐页完整扫描。
+
+报告及缓存默认保存在运行目录下的 `.unlighthouse/`；建议将其加入目标项目的 `.gitignore`，分享报告前检查是否包含敏感 URL 或页面内容。修改站点后如需重新扫描、排查问题，可禁用缓存并开启调试日志：
+
+```bash
+npx unlighthouse@latest --site http://localhost:3000 --no-cache --debug
+```
+
+仅扫描自己拥有或获授权的网站；批量审计会产生请求及浏览器负载。更多参数见 [官方 CLI 文档](https://unlighthouse.dev/integrations/cli)，浏览器问题见 [Chrome 配置文档](https://unlighthouse.dev/guide/guides/chrome-dependency)。
 
 ### Unity MCP
 

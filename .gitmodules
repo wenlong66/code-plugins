@@ -86,3 +86,7 @@
 	path = marketingskills
 	url = https://github.com/wenlong66/marketingskills.git
 	branch = main
+[submodule "seo-skills"]
+	path = seo-skills
+	url = https://github.com/Illyism/seo-skills.git
+	branch = main
