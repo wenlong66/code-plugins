@@ -30,19 +30,6 @@
       "license": "Apache-2.0"
     },
     {
-      "name": "gstack",
-      "description": "Garry's Stack — Claude Code skills plus fast browser automation for AI-assisted engineering workflows.",
-      "version": "1.91.43.0",
-      "source": "./gstack",
-      "author": {
-        "name": "Garry Tan",
-        "url": "https://github.com/garrytan"
-      },
-      "homepage": "https://github.com/garrytan/gstack#readme",
-      "repository": "https://github.com/garrytan/gstack",
-      "license": "MIT"
-    },
-    {
       "name": "hyperframes",
       "description": "HyperFrames by HeyGen. Write HTML, render video. Compositions, GSAP and runtime adapter animations, captions, voiceovers, audio-reactive visuals, and website-to-video capture for HyperFrames.",
       "version": "0.7.57",
@@ -67,6 +54,18 @@
       "homepage": "https://impeccable.style",
       "repository": "https://github.com/pbakaus/impeccable",
       "license": "Apache-2.0"
+    },
+    {
+      "name": "marketing-skills",
+      "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
+      "version": "2.14.0",
+      "source": "./marketingskills",
+      "author": {
+        "name": "Corey Haines"
+      },
+      "homepage": "https://github.com/coreyhaines31/marketingskills",
+      "repository": "https://github.com/coreyhaines31/marketingskills",
+      "license": "MIT"
     },
     {
       "name": "mattpocock-skills",
