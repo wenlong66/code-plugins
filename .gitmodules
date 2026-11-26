@@ -6,18 +6,10 @@
 	path = agent-skills
 	url = https://github.com/wenlong66/agent-skills.git
 	branch = plugin-skills
-[submodule "caveman"]
-	path = caveman
-	url = https://github.com/JuliusBrussee/caveman.git
-	branch = main
 [submodule "claude-mem"]
 	path = claude-mem
 	url = https://github.com/wenlong66/claude-mem.git
 	branch = v13.41.0
-[submodule "gstack"]
-	path = gstack
-	url = https://github.com/wenlong66/gstack.git
-	branch = main
 [submodule "superpowers"]
 	path = superpowers
 	url = https://github.com/wenlong66/superpowers.git
@@ -29,18 +21,6 @@
 [submodule "ui-ux-pro-max-skill"]
 	path = ui-ux-pro-max-skill
 	url = https://github.com/wenlong66/ui-ux-pro-max-skill.git
-	branch = main
-[submodule "unity-mcp"]
-	path = unity-mcp
-	url = https://github.com/CoplayDev/unity-mcp.git
-	branch = beta
-[submodule "godot-mcp"]
-	path = godot-mcp
-	url = https://github.com/Coding-Solo/godot-mcp.git
-	branch = main
-[submodule "codegraph"]
-	path = codegraph
-	url = https://github.com/colbymchenry/codegraph.git
 	branch = main
 [submodule "vercel-skills"]
 	path = vercel-skills
@@ -65,10 +45,6 @@
 [submodule "security-audit-skill"]
 	path = security-audit-skill
 	url = https://github.com/cloudflare/security-audit-skill.git
-	branch = main
-[submodule "markitdown"]
-	path = markitdown
-	url = https://github.com/microsoft/markitdown.git
 	branch = main
 [submodule "khazix-skills"]
 	path = khazix-skills
